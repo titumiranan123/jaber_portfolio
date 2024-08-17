@@ -1,49 +1,37 @@
-import React, { useRef } from 'react';
-import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
+import React, { useEffect, useState } from 'react';
 import Header from '../Component/Header';
 import About from '../Component/About';
+import Work from '../Component/Work';
+
 
 const Home: React.FC = () => {
-  const parallax = useRef<IParallax>(null!);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <div style={{ width: '100%', height: '100%' }}>
-      <Parallax ref={parallax} pages={2}>
-        
-        {/* Parallax layer for the Header component */}
-        <ParallaxLayer
-          offset={0}
-          speed={0.5}
-          factor={1}
-          
-        >
-          <Header />
-        </ParallaxLayer>
+    <div>
+      <div className="parallax-layer header">
+        <Header />
+      </div>
 
-        {/* Parallax layer for the About component */}
-        <ParallaxLayer
-          offset={1}
-          speed={1}
-          factor={1}
-        >
-          <About />
-        </ParallaxLayer>
+      <div className="parallax-layer about">
+        <About />
+      </div>
 
-        {/* Optional: Add a clickable layer to scroll */}
-        <ParallaxLayer
-          offset={0.9}
-          speed={0.2}
-          onClick={() => parallax.current.scrollTo(1)}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            cursor: 'pointer',
-          }}
-        >
-          <p style={{ color: 'white' }}>Scroll down to see About</p>
-        </ParallaxLayer>
-      </Parallax>
+      <div className="parallax-layer work" style={{ transform: `translateY(-${scrollY * 0.5}px)` }}>
+        <Work />
+      </div>
     </div>
   );
 };

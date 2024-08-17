@@ -55,3 +55,46 @@ body{
   .poppins {
     font-family: "Poppins", sans-serif;
   }
+
+  .parallax-layer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .header {
+    height: 100vh;
+
+  }
+  
+  .about {
+    height: 100vh;
+
+  }
+  
+  .work {
+    height: 100vh;
+
+  }
+  
+  /* Optional: Add background images for parallax effect */
+  .header {
+    background-image: url('path-to-your-header-image.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .about {
+    background-image: url('path-to-your-about-image.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .work {
+    background-image: url('path-to-your-work-image.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
