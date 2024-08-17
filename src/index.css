@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.header_bg{
+    background: linear-gradient(180deg, #030403 0%, #A1AD77 171.5%);
+}
+.navbg{
+    background: linear-gradient(270deg, rgba(67, 72, 50, 0.1) 0%, rgba(67, 72, 50, 0.4) 100%);
+
+}
+
+@font-face {
+    font-family: normal;
+    src: url('./assets/font/glancyr-glancyr-regular-400.ttf');
+  }
+  
+  @font-face {
+    font-family: semibold;
+    src: url('./assets/font/glancyr-glancyr-semibold-600.ttf');
+  }
+  
+  @font-face {
+    font-family: bold;
+    src: url('./assets/font/glancyr-glancyr-bold-700.ttf');
+  }
+  
+  @font-face {
+    font-family: regulardin;
+    src: url('./assets/font/DIN-2014_Regular.otf');
+  }
+  
+  
+  
+  .bold {
+    font-family: bold;
+  }
+  
+  .semibold {
+    font-family: semibold;
+  }
+  
+  .normal {
+    font-family: normal;
+  }
+  
+  .regular {
+    font-family: regulardin;
+  }
+  
