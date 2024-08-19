@@ -105,6 +105,9 @@ body{
   overflow-y: scroll;
   height: 100vh;
 }
+.header_bg {
+  scroll-snap-align: start;
+}
 
 /* Each section takes up the full viewport height */
 .scroll-section {

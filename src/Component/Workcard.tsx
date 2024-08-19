@@ -1,8 +1,10 @@
 import React from 'react';
-
-const Workcard:React.FC = ({work1}) => {
+interface props{
+    work1:string
+}
+const Workcard:React.FC<props> = ({work1}) => {
     return (
-        <div className="w-[1280px] h-[525px] flex items-center justify-between p-10 rounded-[20px] bg-[#BACF8C] ">
+        <div className="w-[1280px] h-[480px] flex items-center justify-between p-10 rounded-[20px] bg-[#BACF8C] ">
             <div>
             <img className="w-[508px] h-[381px]" src={work1} alt="work1" />
             </div>

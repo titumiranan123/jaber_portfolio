@@ -10,7 +10,7 @@ const Header: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const triggerPosition = 100; // Adjust this value as needed
+      const triggerPosition = 0;
 
       if (scrollPosition > triggerPosition) {
         setIsVisible(true);
@@ -28,12 +28,12 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <div className="header_bg w-full">
+    <div className="header_bg  w-full">
       <div className="max-w-[1240px] flex justify-center items-center flex-col mx-auto pt-10">
         <Navbar />
         <div className="flex justify-center items-center flex-col">
           <div>
-            <h1 className="font-bold text-center w-[1050px] mt-20 mx-auto text-white text-[72px] leading-[86.4px]">
+            <h1 className="bold text-center w-[1050px] mt-20 mx-auto text-white text-[72px] leading-[86.4px]">
               Grow{" "}
               <span className="text-[#A1AD77]">Personal Brand & Agency</span>{" "}
               With My Design
@@ -50,10 +50,10 @@ const Header: React.FC = () => {
             </motion.p>
             <img
               className={`w-[674px] h-[655px] transition-transform duration-700 ${
-                isMoving ? "translate-y-[-160px]" : "translate-y-[0px]"
+                isMoving ? "translate-y-[-160px]" : "-translate-y-[0px]"
               }`}
               src={user}
-              alt="User"
+              alt=""
             />
             <motion.p
               initial={{ opacity: 0, y: 100, rotate: 16 }}
