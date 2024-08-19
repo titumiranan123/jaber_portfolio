@@ -1,37 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import Header from '../Component/Header';
-import About from '../Component/About';
-import Work from '../Component/Work';
-
+import React from "react";
+import Header from "../Component/Header";
+import About from "../Component/About";
+import Work from "../Component/Work";
 
 const Home: React.FC = () => {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <div>
-      <div className="parallax-layer header">
+    <div className="scroll-container">
+      <section className="scroll-section">
         <Header />
-      </div>
-
-      <div className="parallax-layer about">
+      </section>
+      <section className="scroll-section">
         <About />
-      </div>
-
-      <div className="parallax-layer work" style={{ transform: `translateY(-${scrollY * 0.5}px)` }}>
+      </section>
+      <section className="scroll-section">
         <Work />
-      </div>
+      </section>
     </div>
   );
 };

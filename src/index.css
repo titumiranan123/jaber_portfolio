@@ -98,3 +98,23 @@ body{
     background-size: cover;
     background-position: center;
   }
+
+  /* Container to enable smooth scrolling and snapping */
+.scroll-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+/* Each section takes up the full viewport height */
+.scroll-section {
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.scroll-container {
+  scroll-behavior: smooth;
+}
