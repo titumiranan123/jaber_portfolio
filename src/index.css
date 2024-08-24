@@ -56,57 +56,20 @@ body{
     font-family: "Poppins", sans-serif;
   }
 
-  .parallax-layer {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .header {
-    height: 100vh;
 
-  }
-  
-  .about {
-    height: 100vh;
-
-  }
-  
-  .work {
-    height: 100vh;
-
-  }
-  
-  /* Optional: Add background images for parallax effect */
-  .header {
-    background-image: url('path-to-your-header-image.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .about {
-    background-image: url('path-to-your-about-image.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .work {
-    background-image: url('path-to-your-work-image.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  }
-
+ 
   /* Container to enable smooth scrolling and snapping */
-.scroll-container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-}
+  .scroll-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+  }
+  
 .header_bg {
   scroll-snap-align: start;
+  height: 880px !important;
+  overflow: hidden;
 }
 
 /* Each section takes up the full viewport height */
@@ -115,9 +78,33 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+
   box-sizing: border-box;
 }
-.scroll-container {
-  scroll-behavior: smooth;
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
+
+.container {
+  position: relative;
+  height: 400vh; /* Adjust based on the number of components */
+}
+
+.component {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.component.active {
+  z-index: 2;
+  opacity: 1;
+}
+
