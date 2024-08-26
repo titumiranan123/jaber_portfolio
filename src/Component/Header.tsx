@@ -29,7 +29,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <div className="header_bg w-full snap-start">
+    <div className="header_bg sticky top-0 h-[800px] w-full snap-start">
       <div className="max-w-[1240px] flex justify-center items-center flex-col mx-auto pt-10">
         <Navbar />
         <div className="flex justify-center items-center flex-col">
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
               initial={{ opacity: 0, x: 300, rotate: -16 }}
               animate={{
                 opacity: isVisible ? 1 : 0,
-                x: isVisible ? -60 : 100 ,y:isVisible ? 200:400,
+                x: isVisible ? -60 : 100 ,y:isVisible ? 200:200,
                 rotate: -16,
                 zIndex: isVisible ? 10 : 1, // Adjust z-index based on visibility
               }}
@@ -53,7 +53,7 @@ const Header: React.FC = () => {
               UI/UX Designer
             </motion.p>
             <img
-              className={`w-[674px] h-[655px] transition-transform duration-700 ${
+              className={`w-[674px]  h-[655px] transition-transform duration-700 ${
                 scrollPosition > 200 ? "translate-y-[-100px]" : "translate-y-0"
               }`}
               src={user}
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
               initial={{ opacity: 0, x: 300, rotate: 16 }}
               animate={{
                 opacity: isVisible ? 1 : 0,
-                x: isVisible ? 80 : -100,y:isVisible ? 200:400,
+                x: isVisible ? 80 : -100,y:isVisible ? 200:200,
                 rotate: 16,
                 zIndex: isVisible ? 10 : 1, // Adjust z-index based on visibility
               }}

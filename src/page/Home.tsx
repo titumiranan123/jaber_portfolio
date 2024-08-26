@@ -6,19 +6,13 @@ import Testimonial from "../Component/Testimonial";
 
 const Home: React.FC = () => {
   return (
-    <div >
-      
+    <div>
+      <div className="">
         <Header />
-      
-      
-        <About />
-      
-      
-        <Work />
-      
-      
-        <Testimonial />
-      
+      </div>
+      <About />
+      <Work />
+      <Testimonial />
     </div>
   );
 };
