@@ -1,31 +1,44 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React from "react";
+import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-const Navbar:React.FC = () => {
-    const location = useLocation();
-  
-    const Customnav = ({ title, href, className }: any) => {
-      return (
-        <Link
-          className={` text-white hover:font-[700] font-[400] ${
-            location.pathname === href ? "font-bold" : ""
-          } ${className}`}
-          to={`${href}`}
+gsap.registerPlugin(ScrollToPlugin);
+
+interface NavbarProps {
+  sections: React.RefObject<HTMLDivElement>[];
+}
+
+const Navbar: React.FC<NavbarProps> = ({ sections }) => {
+  const scrollToSection = (index: number) => {
+    if (sections[index]?.current) {
+      gsap.to(window, { duration: 1, scrollTo: sections[index].current });
+    }
+  };
+
+  return (
+    <div className="flex justify-center items-center">
+      <div className=" h-[60px] rounded-[44px] w-[400px] flex gap-[36px] items-center justify-center">
+        <div
+          className="text-white hover:font-bold font-normal cursor-pointer "
+          onClick={() => scrollToSection(1)}
         >
-          {title}
-        </Link>
-      );
-    };
-    return (
-        <div>
-            <div className="navbg h-[60px] rounded-[44px] w-[400px] flex gap-[36px] items-center justify-center">
-          <Customnav className={""} href={"/"} title={"About"} />
-          <Customnav className={""} href={"/works"} title={"WORKS"} />
-          <Customnav className={""} href={"/resume"} title={"RESUME"} />
+          About
         </div>
+        <div
+          className="text-white hover:font-bold font-normal cursor-pointer"
+          onClick={() => scrollToSection(1)}
+        >
+          WORKS
         </div>
-    );
+        <div
+          className="text-white hover:font-bold font-normal cursor-pointer"
+          onClick={() => scrollToSection(1)}
+        >
+          RESUME
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;

@@ -8,7 +8,8 @@ import Workcard from "./Workcard";
 
 const Work: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#030403]  max-w-[1440px] px-[120px] mt-10 mx-auto ">
+    <div className=" bg-[#0E151A] w-full">
+      <div className="min-h-screen   max-w-[1440px] px-[120px] mt-10 mx-auto ">
       <Heading title="Works" />
       <div className="relative mt-10">
         <div className="bg-white mx-auto ms-14 w-[1172px] h-[480px] rounded-[32.96px]"></div>
@@ -36,6 +37,7 @@ const Work: React.FC = () => {
           </Swiper>
         </div>
       </div>
+    </div>
     </div>
   );
 };
