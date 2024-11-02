@@ -3,7 +3,7 @@ import user from "./../assets/user.png";
 
 const Header: React.FC = () => {
   return (
-    <div className="header_bg mt-10  w-full snap-start relative ">
+    <div className="header_bg mt-24  w-full snap-start relative ">
       <div className="max-w-[1240px] flex justify-center items-center flex-col mx-auto pt-10">
         <div className="flex justify-center items-center flex-col">
           <h1 className="bold text-center w-[1050px] absolute top-[30%] mx-auto text-white textshadow text-[167px] leading-[86.4px]">

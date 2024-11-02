@@ -3,7 +3,7 @@ import Heading from "./Heading";
 
 const About: React.FC = () => {
   return (
-    <div className="min-h-screen rounded-[36px] bg-[#0E151A] w-full">
+    <div className="min-h-screen pt-40 rounded-[36px] bg-[#0E151A] w-full">
       <div className="max-w-[1240px] mx-auto mt-5">
         <Heading title={"About"} />
         <div className="text-white font-[400] poppins text-[20px] leading-[30px] mt-[64px]">
