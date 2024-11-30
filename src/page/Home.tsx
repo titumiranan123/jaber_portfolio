@@ -2,17 +2,19 @@
 import React, { useRef } from "react";
 import Header from "../Component/Header";
 import About from "../Component/About";
-import Work from "../Component/Work";
 import Testimonial from "../Component/Testimonial";
 import ScrollSection from "./ScrollSection";
 
 import ScrollNav from "./ScrollNav";
+import Works from "../Component/Works";
 
 type SectionRefs = React.RefObject<HTMLDivElement>[];
 
 const Home: React.FC = () => {
   // Define the refs array with HTMLDivElement type
-  const sectionRefs: SectionRefs = Array.from({ length: 4 }, () => useRef<HTMLDivElement>(null));
+  const sectionRefs: SectionRefs = Array.from({ length: 4 }, () =>
+    useRef<HTMLDivElement>(null)
+  );
 
   return (
     <div>
@@ -30,7 +32,7 @@ const Home: React.FC = () => {
         </ScrollSection>
 
         <ScrollSection ref={sectionRefs[2]}>
-          <Work />
+          <Works />
         </ScrollSection>
 
         <ScrollSection ref={sectionRefs[3]}>

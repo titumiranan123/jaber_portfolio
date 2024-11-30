@@ -49,14 +49,14 @@ const Testimonial: React.FC = () => {
     }
   };
   return (
-    <div className=" bg-[#0E151A] pt-16 rounded-[36px] h-screen w-full">
+    <div className=" bg-[#0E151A] pt-20  rounded-[36px] h-screen w-full">
       <div className="mt-20">
         <Heading title="TESTIMONIAL" />
       </div>
-      <div className="flex flex-col justify-between lg:flex-row max-w-[1240px] items-center gap-10 mx-auto mt-[60px] lg:mt-[120px] lg:px-0 px-4">
+      <div className="flex flex-col justify-between lg:flex-row max-w-[1240px] items-center gap-10 mx-auto mt-[40px] lg:mt-[20px] lg:px-0 px-4">
         {/* Left-side Text Navigation */}
 
-        <div className="w-full lg:w-[460px] lg:h-[441px] rounded-[20px] p-4 flex flex-col justify-center space-y-4">
+        <div className="w-full lg:w-[460px] lg:h-[350px] rounded-[20px] p-4 flex flex-col justify-center space-y-4">
           {slides.map((slide, index) => (
             <motion.button
               key={index}
@@ -64,12 +64,9 @@ const Testimonial: React.FC = () => {
               whileHover={{ scale: 1.05 }} // Hover effect
               whileTap={{ scale: 0.95 }} // Tap effect
               className={`${
-                index === activeIndex
-                  ? "bg-[#121B22] "
-                  : ""
-              }px-[24px] py-[29px] w-[415px] h-[117px] `}
+                index === activeIndex ? "bg-[#121B22] " : ""
+              }px-[14px] py-[19px] w-[415px] h-[117px] `}
             >
-              
               <div className="flex gap-2">
                 <img className="w-10 h-10" src={slide.image} alt="" />
                 <div>
