@@ -7,6 +7,7 @@ import ScrollSection from "./ScrollSection";
 
 import ScrollNav from "./ScrollNav";
 import Works from "../Component/Works";
+// import Works from "../Component/Works";
 
 type SectionRefs = React.RefObject<HTMLDivElement>[];
 
@@ -28,7 +29,8 @@ const Home: React.FC = () => {
         </ScrollSection>
 
         <ScrollSection ref={sectionRefs[1]}>
-          <About />
+          {" "}
+          <About />{" "}
         </ScrollSection>
 
         <ScrollSection ref={sectionRefs[2]}>

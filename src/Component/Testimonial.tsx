@@ -49,14 +49,14 @@ const Testimonial: React.FC = () => {
     }
   };
   return (
-    <div className=" bg-[#0E151A] pt-20  rounded-[36px] h-screen w-full">
+    <div className=" bg-[#0E151A] lg:px-0 px-4 pt-20  rounded-[36px] h-screen w-full">
       <div className="mt-20">
         <Heading title="TESTIMONIAL" />
       </div>
       <div className="flex flex-col justify-between lg:flex-row max-w-[1240px] items-center gap-10 mx-auto mt-[40px] lg:mt-[20px] lg:px-0 px-4">
         {/* Left-side Text Navigation */}
 
-        <div className="w-full lg:w-[460px] lg:h-[350px] rounded-[20px] p-4 flex flex-col justify-center space-y-4">
+        <div className="w-full lg:w-[460px] lg:h-[350px] rounded-[20px] lg:p-4 flex flex-col justify-center space-y-4">
           {slides.map((slide, index) => (
             <motion.button
               key={index}
@@ -113,7 +113,7 @@ const Testimonial: React.FC = () => {
                   animate={{ opacity: 1, x: 0 }} // On animation state
                   exit={{ opacity: 0, x: -50 }} // On exit state
                   transition={{ duration: 0.5 }} // Duration of animation
-                  className="flex flex-col lg:flex-row gap-5  p-6 lg:p-8 rounded-lg shadow-lg"
+                  className="flex flex-col lg:flex-row gap-5   lg:p-8 rounded-lg shadow-lg"
                 >
                   <p className="text-[14px] lg:text-[16px] mt-6 poppins lg:mt-8 font-normal text-white">
                     {slide.content}
