@@ -20,7 +20,7 @@ const ScrollNav: React.FC<ScrollNavProps> = ({ sections }) => {
 
   return (
     <div className="fixed top-8 lg:right-[37%] right-[35%] z-10 ">
-      <div className="h-[60px] hidden rounded-[16px] w-[400px] lg:flex  bg-[#3E5D6D66] items-center justify-center ">
+      <div className="h-[60px] hidden rounded-[16px] w-[400px] md:flex  bg-[#3E5D6D66] items-center justify-center ">
         {sections.map((_section, index) => (
           <button
             key={index}
@@ -31,7 +31,7 @@ const ScrollNav: React.FC<ScrollNavProps> = ({ sections }) => {
           </button>
         ))}
       </div>
-      <div className="w-[129px] h-[64px] py-4 px-[42px] text-white bg-[#3E5D6D66] rounded-xl flex justify-center items-center text-[20px]">
+      <div className="w-[129px] h-[64px] md:hidden  py-4 px-[42px] text-white bg-[#3E5D6D66] rounded-xl flex justify-center items-center text-[20px]">
         Menu
       </div>
     </div>

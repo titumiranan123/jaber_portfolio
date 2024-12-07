@@ -10,17 +10,18 @@ const Header: React.FC = () => {
             DESIGNER
           </h1>
 
-          <div className="relative ">
-            <p className="absolute  left-[120px] text-[32px] text-white w-[284px] h-[60px] top-[54%] -rotate-[18deg] bg-[#18281E] bg-opacity-[21%] px-[24px] py-2 rounded-[12px] text-center lg:block hidden">
+          <div className="relative">
+            <p className="absolute  md:-left-[130px] text-[32px] text-white w-[284px] h-[60px] lg:top-[54%] -rotate-[18deg] bg-[#18281E] bg-opacity-[21%] px-[24px] py-2 rounded-[12px] text-center lg:block hidden">
               UI/UX Designer
             </p>
             <img
-              className={`lg:w-full lg:h-auto  mt-[240px]  w-full h-[322px]  lg:mt-10 transition-transform duration-700  z-30`}
+              className={`lg:w-full lg:h-auto  mt-20  w-full h-[322px]  lg:mt-48 transition-transform duration-700  z-30`}
               src={user}
-              alt=""
+              alt="jaber"
+              loading="lazy"
             />
 
-            <p className="absolute right-[130px] top-[54%] w-[284px] h-[60px] bg-[#18281E] bg-opacity-[21%] px-[24px] rotate-[18deg] py-2 text-[32px] text-white rounded-[12px] text-center lg:block hidden">
+            <p className="absolute -right-[150px] top-[54%] w-[284px] h-[60px] bg-[#18281E] bg-opacity-[21%] px-[24px] rotate-[18deg] py-2 text-[32px] text-white rounded-[12px] text-center lg:block hidden">
               Product Design
             </p>
           </div>
