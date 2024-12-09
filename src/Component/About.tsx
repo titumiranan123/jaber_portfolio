@@ -3,10 +3,10 @@ import Heading from "./Heading";
 
 const About: React.FC = () => {
   return (
-    <div className="min-h-screen lg:pt-40 lg:-mt-0 -mt-[580px] rounded-[36px] bg-[#0E151A] w-full lg:px-0 px-4">
-      <div className="max-w-[1240px] mx-auto lg:mt-5 mt-20">
+    <div className="min-h-screen lg:pt-[64px] lg:-mt-0 -mt-[580px] rounded-[36px] bg-[#0E151A] w-full lg:px-0 px-4">
+      <div className="max-w-[1240px] mx-auto ">
         <Heading title={"About"} />
-        <div className="text-white font-[400] poppins lg:text-[20px] lg:leading-[30px] text-[18px] leading-[24.5px] mt-[64px]">
+        <div className="text-white mt-[20px] font-[400] poppins lg:text-[20px] lg:leading-[30px] text-[18px] leading-[24.5px] ">
           <p>
             I am a UI/UX Designer with the expertise of brand identity designa
             and video editing. Throughout my design journey I have created

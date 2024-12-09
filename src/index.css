@@ -1,80 +1,76 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
+body {
   background: #030403;
 }
-.header_bg{
-  background: linear-gradient(180deg, #131D24 0%, #7AB6D2 100%);
-
+.header_bg {
+  background: linear-gradient(180deg, #131d24 0%, #7ab6d2 100%);
 }
 .inter {
   font-family: "Inter", sans-serif;
 }
-.navbg{
-    background: linear-gradient(270deg, rgba(67, 72, 50, 0.1) 0%, rgba(67, 72, 50, 0.4) 100%);
-
+.navbg {
+  background: linear-gradient(
+    270deg,
+    rgba(67, 72, 50, 0.1) 0%,
+    rgba(67, 72, 50, 0.4) 100%
+  );
 }
 
 @font-face {
-    font-family: normal;
-    src: url('./assets/font/glancyr-glancyr-regular-400.ttf');
-  }
-  
-  @font-face {
-    font-family: semibold;
-    src: url('./assets/font/glancyr-glancyr-semibold-600.ttf');
-  }
-  
-  @font-face {
-    font-family: bold;
-    src: url('./assets/font/glancyr-glancyr-bold-700.ttf');
-  }
-  
-  @font-face {
-    font-family: regulardin;
-    src: url('./assets/font/DIN-2014_Regular.otf');
-  }
-  
-  
-  
-  .bold {
-    font-family: bold;
-  }
-  
-  .semibold {
-    font-family: semibold;
-  }
-  
-  .normal {
-    font-family: normal;
-  }
-  
-  .regular {
-    font-family: regulardin;
-  }
-  .poppins {
-    font-family: "Poppins", sans-serif;
-  }
+  font-family: normal;
+  src: url("./assets/font/glancyr-glancyr-regular-400.ttf");
+}
 
+@font-face {
+  font-family: semibold;
+  src: url("./assets/font/glancyr-glancyr-semibold-600.ttf");
+}
 
- 
-  /* Container to enable smooth scrolling and snapping */
-  .scroll-container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-    scroll-behavior: smooth;
-  }
-  
+@font-face {
+  font-family: bold;
+  src: url("./assets/font/glancyr-glancyr-bold-700.ttf");
+}
+
+@font-face {
+  font-family: regulardin;
+  src: url("./assets/font/DIN-2014_Regular.otf");
+}
+
+.bold {
+  font-family: bold;
+}
+
+.semibold {
+  font-family: semibold;
+}
+
+.normal {
+  font-family: normal;
+}
+
+.regular {
+  font-family: regulardin;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Container to enable smooth scrolling and snapping */
+.scroll-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
 .header_bg {
   scroll-snap-align: start;
   height: 880px !important;
   overflow: hidden;
-  
 }
 
 /* CSS */
@@ -89,8 +85,12 @@ body{
   height: 100vh; /* Full viewport height for each section */
 }
 
-.textshadow{
-  text-shadow: 0px 4px 40px  ;
-
+.textshadow {
+  text-shadow: 0px 4px 40px;
 }
 
+@media (min-width: 640px) {
+  .swiper {
+    height: 800px;
+  }
+}

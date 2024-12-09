@@ -5,7 +5,6 @@ import About from "../Component/About";
 import Testimonial from "../Component/Testimonial";
 import ScrollSection from "./ScrollSection";
 
-import ScrollNav from "./ScrollNav";
 import Works from "../Component/Works";
 // import Works from "../Component/Works";
 
@@ -19,13 +18,10 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      {/* Pass refs array with correct type */}
-      <ScrollNav sections={sectionRefs} />
-
       {/* Scrollable Sections with Components as Children */}
       <div>
         <ScrollSection ref={sectionRefs[0]}>
-          <Header />
+          <Header sectionRefs={sectionRefs} />
         </ScrollSection>
 
         <ScrollSection ref={sectionRefs[1]}>

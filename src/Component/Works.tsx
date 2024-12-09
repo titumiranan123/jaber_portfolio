@@ -7,11 +7,11 @@ import work1 from "./../assets/work1.png";
 import Workcard from "./Workcard";
 const Works: React.FC = () => {
   return (
-    <div className="min-h-screen pt-[125px] rounded-[36px] bg-[#0E151A] w-full">
-      <div className="max-w-[1240px] mx-auto mt-5">
+    <div className="min-h-screen lg:pt-[64px] rounded-[36px] bg-[#0E151A] w-full">
+      <div className="max-w-[1240px] mx-auto ">
         <Heading title="Works" />
-        <div className=" mt-6 relative">
-          <div className="bg-white opacity-50  mx-auto  w-[1102px] h-[400px]  rounded-[32.96px]"></div>
+        <div className=" mt-[20px] relative">
+          <div className="bg-white opacity-50  mx-auto  w-[1102px] h-[400px]  rounded-[32.96px] lg:block hidden"></div>
           <div className="absolute top-2 left-4 h-[582px]">
             <Swiper
               direction={"vertical"}

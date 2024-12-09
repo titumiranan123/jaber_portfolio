@@ -1,15 +1,17 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import user from "./../assets/user.png";
+import ScrollNav from "../page/ScrollNav";
 
-const Header: React.FC = () => {
+const Header: React.FC = ({ sectionRefs }: any) => {
   return (
     <div className="header_bg lg:mt-24  w-full snap-start relative ">
+      <ScrollNav sections={sectionRefs} />
       <div className="max-w-[1240px] lg:min-h-screen   flex justify-center items-center flex-col mx-auto pt-10 lg:px-0 px-4">
         <div className="flex justify-center items-center flex-col">
           <h1 className="bold text-center lg:w-[1050px] absolute top-[30%] mx-auto text-white textshadow text-[71px] lg:text-[167px] leading-[86.4px] ">
             DESIGNER
           </h1>
-
           <div className="relative">
             <p className="absolute  md:-left-[130px] text-[32px] text-white w-[284px] h-[60px] lg:top-[54%] -rotate-[18deg] bg-[#18281E] bg-opacity-[21%] px-[24px] py-2 rounded-[12px] text-center lg:block hidden">
               UI/UX Designer
