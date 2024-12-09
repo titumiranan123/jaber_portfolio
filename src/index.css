@@ -59,32 +59,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Container to enable smooth scrolling and snapping */
-.scroll-container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-  scroll-behavior: smooth;
-}
-
-.header_bg {
-  scroll-snap-align: start;
-  height: 880px !important;
-  overflow: hidden;
-}
-
-/* CSS */
-.container {
-  height: 100vh; /* Full viewport height */
-  overflow-y: scroll; /* Enable vertical scrolling */
-  scroll-snap-type: y mandatory; /* Snap to each section vertically */
-}
-
-.section {
-  scroll-snap-align: start; /* Each section snaps to the top */
-  height: 100vh; /* Full viewport height for each section */
-}
-
 .textshadow {
   text-shadow: 0px 4px 40px;
 }

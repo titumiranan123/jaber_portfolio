@@ -6,7 +6,6 @@ import Testimonial from "../Component/Testimonial";
 import ScrollSection from "./ScrollSection";
 
 import Works from "../Component/Works";
-// import Works from "../Component/Works";
 
 type SectionRefs = React.RefObject<HTMLDivElement>[];
 
