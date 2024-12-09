@@ -2,8 +2,10 @@
 import React from "react";
 import user from "./../assets/user.png";
 import ScrollNav from "../page/ScrollNav";
-
-const Header: React.FC = ({ sectionRefs }: any) => {
+interface props {
+  sectionRefs: any;
+}
+const Header: React.FC<props> = ({ sectionRefs }: any) => {
   return (
     <div className="header_bg   w-full  relative ">
       <ScrollNav sections={sectionRefs} />
