@@ -49,7 +49,7 @@ const Testimonial: React.FC = () => {
     }
   };
   return (
-    <div className=" bg-[#0E151A] lg:px-0 px-4 lg:pt-[64px]  rounded-[36px] lg:h-screen min-h-screen w-full">
+    <div className=" bg-[#0E151A] lg:px-0 px-4  pt-[64px]  rounded-[36px] lg:h-screen  w-full">
       <div className="">
         <Heading title="TESTIMONIAL" />
       </div>

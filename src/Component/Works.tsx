@@ -7,12 +7,12 @@ import work1 from "./../assets/work1.png";
 import Workcard from "./Workcard";
 const Works: React.FC = () => {
   return (
-    <div className="min-h-screen lg:pt-[64px] rounded-[36px] bg-[#0E151A] w-full">
-      <div className="max-w-[1240px] mx-auto lg:h-screen h-[956px">
+    <div className="  pt-[64px] rounded-[36px] bg-[#0E151A] w-full lg:h-screen h-[1056px]">
+      <div className="max-w-[1240px] mx-auto ">
         <Heading title="Works" />
         <div className=" mt-[20px] relative">
-          <div className="bg-white opacity-50  mx-auto  max-w-[1102px] h-[400px]  rounded-[32.96px] lg:block hidden"></div>
-          <div className="absolute top-2 left-4 lg:h-[582px]">
+          <div className="bg-white opacity-50  mx-auto  max-w-[1052px] h-[400px]  rounded-[32.96px] lg:block hidden"></div>
+          <div className="absolute top-2 left-4 ">
             <Swiper
               direction={"vertical"}
               slidesPerView={1}

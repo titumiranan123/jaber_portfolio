@@ -17,8 +17,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      {/* Scrollable Sections with Components as Children */}
-      <div>
+      <div className="overflow-hidden">
         <ScrollSection ref={sectionRefs[0]}>
           <Header sectionRefs={sectionRefs} />
         </ScrollSection>
