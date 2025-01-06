@@ -114,10 +114,29 @@ const Testimonial: React.FC = () => {
             direction="vertical"
             spaceBetween={30}
             slidesPerView={1}
-            mousewheel={true}
+            mousewheel={{
+              forceToAxis: true,
+              releaseOnEdges: true, // This allows native scroll on edges
+            }}
             modules={[Navigation, Mousewheel]}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+            touchReleaseOnEdges={true}
+            onTouchEnd={(swiper) => {
+              if (swiper.isEnd) {
+                document.body.style.overflowY = "auto";
+              } else if (swiper.isBeginning) {
+                document.body.style.overflowY = "auto";
+              }
+            }}
+            onReachEnd={() => {
+              // Let the browser handle the scroll beyond the slider
+              document.body.style.overflowY = "auto";
+            }}
+            onReachBeginning={() => {
+              // Similarly, allow upward scrolling
+              document.body.style.overflowY = "auto";
+            }}
             className="w-full h-[530px] lg:h-[415px]"
           >
             {slides.map((slide, index) => (

@@ -14,12 +14,12 @@ const Works: React.FC = () => {
           <div className="bg-white opacity-50  mx-auto  max-w-[1052px] h-[400px]  rounded-[32.96px] lg:block hidden"></div>
           <div className="absolute top-2 left-4 ">
             <Swiper
-              direction={"vertical"}
-              slidesPerView={1}
+              direction="vertical"
               spaceBetween={30}
-              mousewheel={{ forceToAxis: true }}
-              pagination={{
-                clickable: true,
+              slidesPerView={1}
+              mousewheel={{
+                forceToAxis: true,
+                releaseOnEdges: true, // This allows native scroll on edges
               }}
               modules={[Mousewheel]}
               touchReleaseOnEdges={true}
