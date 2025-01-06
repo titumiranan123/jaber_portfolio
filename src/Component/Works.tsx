@@ -22,6 +22,22 @@ const Works: React.FC = () => {
                 clickable: true,
               }}
               modules={[Mousewheel]}
+              touchReleaseOnEdges={true}
+              onTouchEnd={(swiper) => {
+                if (swiper.isEnd) {
+                  document.body.style.overflowY = "auto";
+                } else if (swiper.isBeginning) {
+                  document.body.style.overflowY = "auto";
+                }
+              }}
+              onReachEnd={() => {
+                // Let the browser handle the scroll beyond the slider
+                document.body.style.overflowY = "auto";
+              }}
+              onReachBeginning={() => {
+                // Similarly, allow upward scrolling
+                document.body.style.overflowY = "auto";
+              }}
               className="mySwiper h-full"
             >
               <SwiperSlide>
