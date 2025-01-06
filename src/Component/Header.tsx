@@ -21,7 +21,7 @@ const Header: React.FC<props> = ({ sectionRefs }: any) => {
             </p>
             <div className="relative">
               <img
-                className={`lg:w-full lg:h-[550px]  mt-[160px]  w-full h-[502px]  lg:mt-36 transition-transform duration-700  z-30`}
+                className={`lg:w-full lg:h-[520px]  mt-[160px]  w-full h-[502px]  lg:mt-[250px] transition-transform duration-700  z-30`}
                 src={user}
                 alt="jaber"
                 loading="lazy"
