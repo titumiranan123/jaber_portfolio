@@ -6,6 +6,7 @@ import Testimonial from "../Component/Testimonial";
 import ScrollSection from "./ScrollSection";
 
 import Works from "../Component/Works";
+import Footer from "../Component/Footer";
 
 type SectionRefs = React.RefObject<HTMLDivElement>[];
 
@@ -17,7 +18,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden md:block hidden">
         <ScrollSection ref={sectionRefs[0]}>
           <Header sectionRefs={sectionRefs} />
         </ScrollSection>
@@ -34,6 +35,16 @@ const Home: React.FC = () => {
         <ScrollSection ref={sectionRefs[3]}>
           <Testimonial />
         </ScrollSection>
+        <ScrollSection ref={sectionRefs[4]}>
+          <Footer />
+        </ScrollSection>
+      </div>
+      <div className="md:hidden block overflow-hidden">
+        <Header sectionRefs={[]} />
+        <About />
+        <Works />
+        <Testimonial />
+        <Footer />
       </div>
     </div>
   );

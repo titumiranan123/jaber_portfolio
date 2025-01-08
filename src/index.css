@@ -62,8 +62,10 @@ body {
 .textshadow {
   text-shadow: 0px 4px 40px;
 }
-
-@media (min-width: 640px) {
+.swiper {
+  height: 800px;
+}
+@media (max-width: 640px) {
   .swiper {
     height: 800px;
   }
