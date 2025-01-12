@@ -49,8 +49,8 @@ const Testimonial: React.FC = () => {
     }
   };
   return (
-    <div className="w-full min-h-screen ">
-      <div className="  pt-[64px] lg:pb-0 pb-16 lg:rounded-[36px] bg-[#0E151A] rounded-b-[36px] max-w-[1240px] mx-auto  ">
+    <div className="w-full min-h-screen">
+      <div className="  pt-[64px] lg:pb-0 pb-16  bg-[#0E151A] rounded-b-[36px]  mx-auto  ">
         <div className="max-w-[1240px] mx-auto ">
           <Heading title="TESTIMONIAL" />
         </div>

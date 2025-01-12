@@ -1,42 +1,41 @@
 import React from "react";
-import gsap from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-
-gsap.registerPlugin(ScrollToPlugin);
-
-interface NavbarProps {
-  sections: React.RefObject<HTMLDivElement>[];
-}
-
-const Navbar: React.FC<NavbarProps> = ({ sections }) => {
-  const scrollToSection = (index: number) => {
-    if (sections[index]?.current) {
-      gsap.to(window, { duration: 1, scrollTo: sections[index].current });
-    }
-  };
-
+import logo from "./../assets/logo.png";
+import whatsapp from "./../assets/what.png";
+const Navbar: React.FC = () => {
   return (
-    <div className="flex justify-center items-center">
-      <div className=" h-[60px] rounded-[44px] w-[400px] flex gap-[36px] items-center justify-center">
-        <div
-          className="text-white hover:font-bold font-normal cursor-pointer "
-          onClick={() => scrollToSection(1)}
+    <div className="flex max-w-[1240px] mx-auto justify-between items-center py-6">
+      <div>
+        <img src={logo} alt="logo" />
+      </div>
+      <div className="bg-[#FCFBFC] rounded-full w-[478px] h-[58px]  flex justify-center items-center gap-3">
+        <a
+          href="#about"
+          className="text-[20px] leading-[32px] font-[700] uppercase"
         >
           About
-        </div>
-        <div
-          className="text-white hover:font-bold font-normal cursor-pointer"
-          onClick={() => scrollToSection(1)}
+        </a>
+        <a
+          className="uppercase text-[20px] leading-[32px] font-[400]"
+          href="#about"
         >
-          WORKS
-        </div>
-        <div
-          className="text-white hover:font-bold font-normal cursor-pointer"
-          onClick={() => scrollToSection(1)}
+          Works
+        </a>
+        <a
+          className="uppercase text-[20px] leading-[32px] font-[400]"
+          href="#about"
         >
-          RESUME
-        </div>
+          Resume
+        </a>
       </div>
+      <button className="py-3 px-2 bg-[#030606] text-white rounded-full  lg:w-[162px] w-[250px] flex items-center poppins gap-2 lg:text-[20px] font-[600] justify-center">
+        {" "}
+        <img
+          className="w-[36px] h-[36px]"
+          src={whatsapp}
+          alt="case study"
+        />{" "}
+        Contact
+      </button>
     </div>
   );
 };

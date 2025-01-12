@@ -9,7 +9,7 @@ const Works: React.FC = () => {
   return (
     <div
       id="#works"
-      className="  pt-[64px] md:rounded-[36px] bg-[#0E151A] w-full lg:h-screen h-[786px]"
+      className="  pt-[64px]  bg-[#0E151A] w-full lg:h-screen h-[786px]"
     >
       <div className="max-w-[1240px] mx-auto ">
         <Heading title="Works" />
@@ -22,23 +22,20 @@ const Works: React.FC = () => {
               slidesPerView={1}
               mousewheel={{
                 forceToAxis: true,
-                releaseOnEdges: true, // This allows native scroll on edges
+                releaseOnEdges: true,
               }}
               modules={[Mousewheel]}
               touchReleaseOnEdges={true}
+              speed={600} // Set transition speed to 600ms for smoother transitions
               onTouchEnd={(swiper) => {
-                if (swiper.isEnd) {
-                  document.body.style.overflowY = "auto";
-                } else if (swiper.isBeginning) {
+                if (swiper.isEnd || swiper.isBeginning) {
                   document.body.style.overflowY = "auto";
                 }
               }}
               onReachEnd={() => {
-                // Let the browser handle the scroll beyond the slider
                 document.body.style.overflowY = "auto";
               }}
               onReachBeginning={() => {
-                // Similarly, allow upward scrolling
                 document.body.style.overflowY = "auto";
               }}
               className="mySwiper"
