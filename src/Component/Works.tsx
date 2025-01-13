@@ -9,7 +9,7 @@ const Works: React.FC = () => {
   return (
     <div
       id="#works"
-      className="  pt-[64px]  bg-[#0E151A] w-full lg:h-screen h-[786px]"
+      className="  pt-[64px]  bg-[#0E151A] w-full lg:h-screen h-[886px]"
     >
       <div className="max-w-[1240px] mx-auto ">
         <Heading title="Works" />

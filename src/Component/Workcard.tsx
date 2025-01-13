@@ -9,7 +9,7 @@ import arrow1 from "./../assets/arrow1.png";
 
 const Workcard: React.FC<Props> = ({ work1 }) => {
   return (
-    <div className="max-w-[400px] lg:max-w-[1200px] w-full lg:h-[453px] h-[620px] flex items-center justify-between lg:flex-row flex-col py-5 px-5 lg:py-8 lg:px-8 rounded-[36px] bg-white gap-5 lg:gap-16 mx-auto">
+    <div className="max-w-[400px] lg:max-w-[1200px] w-full lg:h-[453px] h-[720px] flex items-center justify-between lg:flex-row flex-col py-5 px-5 lg:py-8 lg:px-8 rounded-[36px] bg-white gap-5 lg:gap-16 mx-auto">
       <img src={work1} alt="work1" className="flex-shrink-0" />
       <div className="flex flex-col gap-4 lg:w-[552px]">
         <h1 className="poppins font-semibold text-[20px] lg:text-[24px] leading-snug">
