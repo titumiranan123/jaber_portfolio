@@ -2,7 +2,7 @@ import React from "react";
 import arrow from "./../assets/arrow.png";
 const Footer: React.FC = () => {
   return (
-    <div className="max-w-[1240px] md:mt-[80px] mx-auto mt-[60px]">
+    <div className="max-w-[1240px] md:mt-[131px] mx-auto mt-[60px]">
       <div className="flex justify-center items-center flex-col ">
         <h1 className="text-[#030606] font-[600] md:text-[64px] md:leading-[96px] text-[32px] poppins text-center">
           HAVE A PROJECT ?

@@ -64,11 +64,11 @@ const Works: React.FC = () => {
   return (
     <div
       id="#works"
-      className="  pt-[64px]  bg-[#0E151A] w-full lg:h-screen h-[886px]"
+      className="  pt-[83px]  bg-[#0E151A] w-full lg:h-screen h-[886px]"
     >
       <div className="max-w-[1240px] mx-auto ">
         <Heading title="Works" />
-        <div className=" mt-[80px] relative">
+        <div className=" mt-[40px] relative">
           <div className="bg-white opacity-50  mx-auto  max-w-[1052px] h-[400px]  rounded-[32.96px] lg:block hidden"></div>
           <div className="lg:absolute top-2 lg:mt-0 left-4 ">
             <Swiper

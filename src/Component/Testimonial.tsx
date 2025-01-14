@@ -53,12 +53,11 @@ const Testimonial: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#0E151A] w-full rounded-b-[36px]">
-      <div className="pt-[104px] lg:pb-0   max-w-[1240px] mx-auto pb-[116px] min-h-screen">
-        <div className="">
-          <Heading title="TESTIMONIAL" />
-        </div>
-        <div className="flex flex-col lg:flex-row  items-center gap-10  mt-[80px] lg:px-0 px-4">
+    <div className="bg-[#0E151A] pt-[83px] pb-[80px] w-full rounded-b-[36px]">
+      <div className=" max-w-[1240px] mx-auto  ">
+        <Heading title="TESTIMONIAL" />
+
+        <div className="flex flex-col lg:flex-row  items-center gap-10  mt-[40px] lg:px-0 px-4">
           {/* Left-side Text Navigation */}
           <div className="w-full lg:w-[500px] space-y-4">
             {slides.map((slide, index) => (
