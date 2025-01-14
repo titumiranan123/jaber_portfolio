@@ -4,8 +4,63 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Mousewheel } from "swiper/modules";
 import work1 from "./../assets/work1.png";
+import work2 from "./../assets/work2.png";
+import work3 from "./../assets/work3.png";
+import work4 from "./../assets/work4.png";
+import work5 from "./../assets/work5.png";
+import work6 from "./../assets/work6.png";
 import Workcard from "./Workcard";
+interface Works {
+  title: string;
+  link: string;
+  content: string;
+  image: string;
+}
 const Works: React.FC = () => {
+  const works: Works[] = [
+    {
+      title: "Video Editor Portfolio Website",
+      link: "https://montagemotion.com",
+      content:
+        "This the portfolio website for top rated video editor Samiul. In this website I made a smooth user flow for his target client to know about Samiul and his service and easily contact him or book a call",
+      image: work2,
+    },
+    {
+      title: "Video Editor Portfolio Website",
+      link: "https://montagemotion.com",
+      content:
+        "This the portfolio website for top rated video editor Samiul. In this website I made a smooth user flow for his target client to know about Samiul and his service and easily contact him or book a call",
+      image: work1,
+    },
+    {
+      title: "Video Editor Portfolio Website",
+      link: "https://montagemotion.com",
+      content:
+        "This the portfolio website for top rated video editor Samiul. In this website I made a smooth user flow for his target client to know about Samiul and his service and easily contact him or book a call",
+      image: work3,
+    },
+    {
+      title: "Video Editor Portfolio Website",
+      link: "https://montagemotion.com",
+      content:
+        "This the portfolio website for top rated video editor Samiul. In this website I made a smooth user flow for his target client to know about Samiul and his service and easily contact him or book a call",
+      image: work4,
+    },
+    {
+      title: "Video Editor Portfolio Website",
+      link: "http://itechpark.co/",
+      content:
+        "This the portfolio website for top rated video editor Samiul. In this website I made a smooth user flow for his target client to know about Samiul and his service and easily contact him or book a call",
+      image: work5,
+    },
+    {
+      title: "Video Editor Portfolio Website",
+      link: "https://montagemotion.com",
+      content:
+        "This the portfolio website for top rated video editor Samiul. In this website I made a smooth user flow for his target client to know about Samiul and his service and easily contact him or book a call",
+      image: work6,
+    },
+  ];
   return (
     <div
       id="#works"
@@ -40,15 +95,11 @@ const Works: React.FC = () => {
               }}
               className="mySwiper"
             >
-              <SwiperSlide>
-                <Workcard work1={work1} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Workcard work1={work1} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Workcard work1={work1} />
-              </SwiperSlide>
+              {works.map((p, indx) => (
+                <SwiperSlide key={indx}>
+                  <Workcard work={p} />
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>
