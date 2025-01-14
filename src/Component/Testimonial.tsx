@@ -6,7 +6,9 @@ import { motion } from "framer-motion"; // Import Framer Motion
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/mousewheel";
-import design from "./../assets/user1.png";
+import client1 from "./../assets/client1.png";
+import client2 from "./../assets/client2.png";
+import client3 from "./../assets/client3.png";
 import Heading from "./Heading";
 
 interface Slide {
@@ -15,31 +17,32 @@ interface Slide {
   content: string;
   image: string;
 }
+
 const Testimonial: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef<any>(null);
 
   const slides: Slide[] = [
     {
-      designation: "Design",
-      name: "Design",
+      designation: "Samiul Arafat Imon",
+      name: "Founder & CEO, Montage Motion",
       content:
-        "I-Tech Park BD serves as your Digital Marketing Partner in all way possible. From Social Media Marketing. WordPress Customization to ranking your website in search engines (SEO) . we assist you in your digital presence.I-Tech Park BD serves as your Digital Marketing Partner in all way possible. From Social Media Marketing. WordPress Customization to ranking your website in search engines (SEO) . we assist you in your digital presence.I-Tech Park BD serves as your Digital Marketing Partner in all way possible. From Social Media Marketing. WordPress Customization to ranking your website in search engines (SEO) . we assist you in your digital presence.I-Tech Park BD serves as your Digital Marketing Partner in all way possible. From Social Media Marketing. WordPress Customization to ranking your website in search engines (SEO) . we assist you in your digital presence.",
-      image: design,
+        "Working with Jaber Hossain was an absolute pleasure! His expertise as a UI/UX designer is unmatched. Jaber designed both my personal and agency websites, as well as landing pages for my business, and the results were phenomenal. He has an incredible eye for detail and a deep understanding of user experience, ensuring every design was not only visually stunning but also functional and user-friendly. <br/> I highly recommend Jaber for anyone looking to enhance their digital presence!",
+      image: client1,
     },
     {
-      designation: "Web Development",
-      name: "E-Comerce",
+      designation: "Abul Hasnat",
+      name: "Front-end Engineer , Dashur Al, LLC",
       content:
-        "I-Tech Park BD serves as your Digital Marketing Partner in all way possible. From Social Media Marketing. WordPress Customization to ranking your website in search engines (SEO) . we assist you in your digital presence.I-Tech Park BD serves as your Digital Marketing Partner in all way possible. From Social Media Marketing. WordPress Customization to ranking your website in search engines (SEO) . we assist you in your digital presence.I-Tech Park BD serves as your Digital Marketing Partner in all way possible. From Social Media Marketing. WordPress Customization to ranking your website in search engines (SEO) . we assist you in your digital presence.I-Tech Park BD serves as your Digital Marketing Partner in all way possible. From Social Media Marketing. WordPress Customization to ranking your website in search engines (SEO) . we assist you in your digital presence.",
-      image: design,
+        "Jaber's work in designing my Figma page was nothing short of exceptional. His creativity and visual appeal truly exceeded expectations, and he was incredibly polite and proactive throughout the process. I love his fluent communication and stellar delivery. He is setting up the bar so high!!!",
+      image: client2,
     },
     {
-      designation: "Video Editing",
-      name: "Billie Pierce",
+      designation: "Owner, Zuprex",
+      name: "Solaiman Swiim ",
       content:
-        "I-Tech Park BD serves as your Digital Marketing Partner in all way possible. From Social Media Marketing. WordPress Customization to ranking your website in search engines (SEO) . we assist you in your digital presence.I-Tech Park BD serves as your Digital Marketing Partner in all way possible. From Social Media Marketing. WordPress Customization to ranking your website in search engines (SEO) . we assist you in your digital presence.I-Tech Park BD serves as your Digital Marketing Partner in all way possible. From Social Media Marketing. WordPress Customization to ranking your website in search engines (SEO) . we assist you in your digital presence.I-Tech Park BD serves as your Digital Marketing Partner in all way possible. From Social Media Marketing. WordPress Customization to ranking your website in search engines (SEO) . we assist you in your digital presence.",
-      image: design,
+        "Jaber Hossain brought our vision for Zuprex to life with his outstanding UI/UX design skills. He designed a modern and intuitive interface that not only looks amazing but also delivers a seamless shopping experience for our customers. His dedication, creativity, and attention to detail made all the difference. We highly recommend Jaber for any design project!",
+      image: client3,
     },
   ];
 
@@ -48,43 +51,43 @@ const Testimonial: React.FC = () => {
       swiperRef.current.slideTo(index);
     }
   };
+
   return (
-    <div className="w-full min-h-screen">
-      <div className="  pt-[64px] lg:pb-0 pb-16  bg-[#0E151A] rounded-b-[36px]  mx-auto  ">
-        <div className="max-w-[1240px] mx-auto ">
+    <div className="bg-[#0E151A] w-full rounded-b-[36px]">
+      <div className="pt-[104px] lg:pb-0   max-w-[1240px] mx-auto pb-[116px] min-h-screen">
+        <div className="">
           <Heading title="TESTIMONIAL" />
         </div>
-        <div className="flex flex-col justify-between lg:flex-row max-w-[1240px] rounded-[36px] items-center gap-10 mx-auto mt-[20px] lg:mt-[20px] lg:px-0 px-4">
+        <div className="flex flex-col lg:flex-row  items-center gap-10  mt-[80px] lg:px-0 px-4">
           {/* Left-side Text Navigation */}
-          <div className="w-full lg:w-[460px] lg:h-[350px] rounded-[20px] lg:p-4 flex flex-col justify-center space-y-4">
+          <div className="w-full lg:w-[500px] space-y-4">
             {slides.map((slide, index) => (
               <div key={index}>
                 <motion.button
-                  key={index}
                   onClick={() => handleTextNavigationClick(index)}
-                  whileHover={{ scale: 1.05 }} // Hover effect
-                  whileTap={{ scale: 0.95 }} // Tap effect
-                  className={`${
-                    index === activeIndex ? "bg-[#121B22] " : ""
-                  } px-[14px] py-[19px] w-[415px] h-[117px] `}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className={`px-[14px] py-[19px] lg:w-[440px] h-[117px] ${
+                    index === activeIndex ? "bg-[#121B22] rounded-lg" : ""
+                  }`}
                 >
-                  <div className="flex gap-2">
+                  <div className="flex gap-2  items-center">
                     <img className="w-10 h-10" src={slide.image} alt="" />
                     <div>
                       <p
-                        className={`flex items-center text-left inter transition-all duration-300 text-white ${
+                        className={`text-left text-white font-[600] ${
                           index === activeIndex
-                            ? "ms-1 text-[16px] lg:text-[20.5px] leading-[30px] font-[600]"
-                            : "text-[14px] lg:text-[20.5px] leading-[30px] font-[600]"
+                            ? "text-[16px] lg:text-[20.5px] leading-[30px]"
+                            : "text-[14px] lg:text-[20.5px] leading-[30px]"
                         }`}
                       >
                         {slide.name}
                       </p>
                       <p
-                        className={`flex inter items-center text-left transition-all duration-300 text-white ${
+                        className={`text-left text-white font-[500] ${
                           index === activeIndex
-                            ? "ms-1 text-[14px] lg:text-[15.37px] leading-[23.06px] font-[500]"
-                            : "text-[14px] lg:text-[15.37px] leading-[23.06px] font-[500]"
+                            ? "text-[14px] lg:text-[15.37px] leading-[23.06px]"
+                            : "text-[14px] lg:text-[15.37px] leading-[23.06px]"
                         }`}
                       >
                         {slide.designation}
@@ -98,10 +101,12 @@ const Testimonial: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.3 }}
-                    className="bg-[#121B22] p-4 rounded-lg lg:hidden"
+                    className="bg-[#121B22] p-4 rounded-xl lg:hidden"
                   >
                     <p className="text-white text-[14px] lg:text-[16px]">
-                      {slide.content}
+                      {slide.content.split("<br/>").map((p, i) => (
+                        <span key={i}>{p}</span>
+                      ))}
                     </p>
                   </motion.div>
                 )}
@@ -110,48 +115,31 @@ const Testimonial: React.FC = () => {
           </div>
 
           {/* Main Slider */}
-          <div className="w-full lg:block hidden lg:w-[780px] lg:h-[440px] rounded-xl overflow-hidden">
+          <div className="w-full lg:block hidden lg:w-[780px] rounded-xl overflow-hidden">
             <Swiper
               direction="vertical"
               spaceBetween={30}
               slidesPerView={1}
-              mousewheel={{
-                forceToAxis: true,
-                releaseOnEdges: true, // This allows native scroll on edges
-              }}
+              mousewheel={{ forceToAxis: true, releaseOnEdges: true }}
               modules={[Navigation, Mousewheel]}
               onSwiper={(swiper) => (swiperRef.current = swiper)}
               onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-              touchReleaseOnEdges={true}
-              onTouchEnd={(swiper) => {
-                if (swiper.isEnd) {
-                  document.body.style.overflowY = "auto";
-                } else if (swiper.isBeginning) {
-                  document.body.style.overflowY = "auto";
-                }
-              }}
-              onReachEnd={() => {
-                // Let the browser handle the scroll beyond the slider
-                document.body.style.overflowY = "auto";
-              }}
-              onReachBeginning={() => {
-                // Similarly, allow upward scrolling
-                document.body.style.overflowY = "auto";
-              }}
               className="w-full h-[530px] lg:h-[415px]"
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <motion.div
-                    initial={{ opacity: 0, x: 50 }} // Initial slide-in state
-                    animate={{ opacity: 1, x: 0 }} // On animation state
-                    exit={{ opacity: 0, x: -50 }} // On exit state
-                    transition={{ duration: 0.5 }} // Duration of animation
-                    className="flex flex-col lg:flex-row gap-5   lg:p-8 rounded-lg shadow-lg"
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -50 }}
+                    transition={{ duration: 0.5 }}
+                    className="flex flex-col lg:flex-row gap-5 lg:p-8 rounded-lg shadow-lg"
                   >
-                    <p className="text-[14px] lg:text-[16px] mt-6 poppins lg:mt-8 font-normal text-white">
-                      {slide.content}
-                    </p>
+                    <div className="text-white text-[14px] lg:text-[16px] font-normal flex flex-col gap-3">
+                      {slide.content.split("<br/>").map((p, i) => (
+                        <p key={i}>{p}</p>
+                      ))}
+                    </div>
                   </motion.div>
                 </SwiperSlide>
               ))}
