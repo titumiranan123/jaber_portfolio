@@ -37,6 +37,7 @@ const Navbar: React.FC = () => {
         </a>
       </div>
       <Link
+        target="_blank"
         to={whatsappLink}
         className="py-3 px-2 bg-[#030606] text-white rounded-full  lg:w-[162px] w-[250px] lg:flex hidden items-center poppins gap-2 lg:text-[20px] font-[600] justify-center"
       >
