@@ -3,6 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #030403;
 }
@@ -75,8 +79,8 @@ body {
   position: relative;
   text-decoration: none;
   color: #fff;
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   background-color: #22f59a;
   margin: 0 auto;
   border-radius: 50%;
@@ -104,7 +108,7 @@ body {
       0 0 0 1px #14f28414;
   }
   100% {
-    box-shadow: 0 0 0 10px #14f28414, 0 0 0 15px #14f28414, 0 0 0 20px #14f28414,
-      0 0 0 30px rgba(189, 142, 210, 0);
+    box-shadow: 0 0 0 10px #14f28414, 0 0 0 15px #14f28414, 0 0 0 13px #14f28414,
+      0 0 0 13px rgba(189, 142, 210, 0);
   }
 }

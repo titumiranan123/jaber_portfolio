@@ -12,9 +12,9 @@ const Footer: React.FC = () => {
         </p>
 
         <div className="md:mt-16 mt-10 flex justify-center items-center">
-          <button className="py-4 px-4 bg-[#030606] text-white rounded-full lg:h-[68px] h-[58px] lg:w-[212px] w-[250px] flex items-center poppins gap-2 lg:text-[20px] font-[600] justify-center">
+          <button className="py-4 px-4 bg-[#030606] text-white rounded-full lg:h-[68px] h-[58px] lg:w-[180px] w-[250px] flex items-center poppins gap-2 lg:text-[20px] font-[600] justify-center">
             {" "}
-            Get Started
+            Contact
             <img
               className="w-[36px] h-[36px]"
               src={arrow}

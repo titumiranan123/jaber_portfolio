@@ -9,11 +9,17 @@ import Footer from "../Component/Footer";
 const Home: React.FC = () => {
   return (
     <div>
-      <div className=" overflow-hidden">
+      <div className="overflow-hidden">
         <Header />
-        <About />
-        <Works />
-        <Testimonial />
+        <section id="about">
+          <About />
+        </section>
+        <section id="works">
+          <Works />
+        </section>
+        <section id="resume">
+          <Testimonial />
+        </section>
         <Footer />
       </div>
     </div>

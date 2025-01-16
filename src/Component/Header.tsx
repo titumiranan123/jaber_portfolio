@@ -23,7 +23,7 @@ const Header: React.FC = () => {
         <h1 className="font-[400] lg:mt-6 mt-4 lg:text-[20px] lg:leading-[26.4px] text-[16px] leading-[26.5px] text-center">
           UI/UX Designer{" "}
           <span className="text-[#A0A0A0] ">
-            for SaaS,ERP,POS, WEBSITE &Landing Page
+            for SaaS, ERP, POS, Website & Landing Page
           </span>
         </h1>
         <button className=" lg:mt-[72px] mt-10 py-4 px-7 bg-[#030606] text-white rounded-full lg:h-[68px] h-[58px] lg:w-[208px] w-[200px] flex items-center poppins lg:gap-2 gap-1 lg:text-[18px] text-[16px] font-[600] lg:justify-center justify-between">
