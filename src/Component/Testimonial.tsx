@@ -55,7 +55,7 @@ const Testimonial: React.FC = () => {
   return (
     <div
       id="#resume"
-      className="bg-[#0E151A] pt-[75px] pb-[80px] w-full rounded-b-[36px]"
+      className="bg-[#0E151A] lg:pt-[75px] pb-[80px] w-full rounded-b-[36px]"
     >
       <div className=" max-w-[1240px] mx-auto  ">
         <Heading title="TESTIMONIAL" />

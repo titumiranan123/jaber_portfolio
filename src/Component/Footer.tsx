@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
         <h1 className="text-[#030606] font-[600] md:text-[64px] md:leading-[96px] text-[32px] poppins text-center">
           HAVE A PROJECT ?
         </h1>
-        <p className="text-[20px] font-[400px] leading-[30px]">
+        <p className="lg:text-[20px] text-[16px] font-[400px] lg:leading-[30px] text-center">
           I am always available to take your project.
         </p>
 

@@ -11,7 +11,7 @@ const Header: React.FC = () => {
       </button>
 
       <div className="flex justify-center items-center flex-col mt-5">
-        <div className="font-[600] lg:text-[88px] lg:leading-[105.6px] text-[50px] leading-[62px] flex justify-center items-center gap-3">
+        <div className="font-[600] lg:text-[88px] lg:leading-[105.6px] text-[44px] leading-[62px] flex justify-center items-center lg:gap-3">
           <h1 className="text-[#A0A0A0]">Hi, I'm</h1>
           <img
             className="lg:w-[100px] lg:h-[100px] w-[50px] h-[50px]"
