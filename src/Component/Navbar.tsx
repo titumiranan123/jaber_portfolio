@@ -69,64 +69,63 @@ const Navbar: React.FC = () => {
           }`}
         ></span>
       </div>
-      {
-        <div
-          className={`bg-white absolute left-0 top-0 inset-0 h-[300px] px-10 transition-transform duration-500 ease-in-out rounded-b-[36px] z-30 flex lg:hidden flex-col gap-0 ${
-            !isOpen ? "translate-x-[400px] hidden" : "translate-x-0"
-          } `}
+
+      <div
+        className={`bg-white absolute left-0 top-0 inset-0 h-[300px] px-10 transition-transform duration-500 ease-in-out rounded-b-[36px] z-30 flex lg:hidden flex-col gap-0 ${
+          !isOpen ? "translate-x-[400px] hidden" : "translate-x-0"
+        } `}
+      >
+        <button
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}
+          className="absolute cursor-pointer text-black text-2xl right-2 top-6   p-3  rounded-xl"
         >
-          <button
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-            className="absolute cursor-pointer text-black text-2xl right-2 top-6   p-3  rounded-xl"
+          <div
+            onClick={() => setIsOpen(!isOpen)}
+            className="hamburg flex lg:hidden flex-col gap-1"
           >
-            <div
-              onClick={() => setIsOpen(!isOpen)}
-              className="hamburg flex lg:hidden flex-col gap-1"
-            >
-              <span
-                className={`w-7 h-1 bg-black transition-transform duration-300 ease-in-out ${
-                  isOpen ? "translate-y-[7.5px] rotate-45" : "translate-y-0"
-                }`}
-              ></span>
-              <span
-                className={`w-7 h-1 bg-black transition-opacity duration-300 ease-in-out ${
-                  isOpen ? "opacity-0" : "opacity-100"
-                }`}
-              ></span>
-              <span
-                className={`w-7 h-1 bg-black transition-transform duration-300 ease-in-out ${
-                  isOpen ? "-translate-y-[9px] -rotate-45" : "translate-y-0"
-                }`}
-              ></span>
-            </div>
-          </button>
-          <div className="flex flex-col mt-20 justify-center items-center">
-            <a
-              onClick={() => setIsOpen(!isOpen)}
-              href={`#about`}
-              className="text-[20px] leading-[32px] font-[600] uppercase"
-            >
-              About
-            </a>
-            <a
-              onClick={() => setIsOpen(!isOpen)}
-              href={`#works`}
-              className="text-[20px] leading-[32px] font-[600] uppercase"
-            >
-              Works
-            </a>
-            <a
-              onClick={() => setIsOpen(!isOpen)}
-              href={`#resume`}
-              className="text-[20px] leading-[32px] font-[600] uppercase"
-            >
-              RESUME
-            </a>
+            <span
+              className={`w-7 h-1 bg-black transition-transform duration-300 ease-in-out ${
+                isOpen ? "translate-y-[7.5px] rotate-45" : "translate-y-0"
+              }`}
+            ></span>
+            <span
+              className={`w-7 h-1 bg-black transition-opacity duration-300 ease-in-out ${
+                isOpen ? "opacity-0" : "opacity-100"
+              }`}
+            ></span>
+            <span
+              className={`w-7 h-1 bg-black transition-transform duration-300 ease-in-out ${
+                isOpen ? "-translate-y-[9px] -rotate-45" : "translate-y-0"
+              }`}
+            ></span>
           </div>
+        </button>
+        <div className="flex flex-col mt-20 justify-center items-center">
+          <a
+            onClick={() => setIsOpen(!isOpen)}
+            href={`#about`}
+            className="text-[20px] leading-[32px] font-[600] uppercase"
+          >
+            About
+          </a>
+          <a
+            onClick={() => setIsOpen(!isOpen)}
+            href={`#works`}
+            className="text-[20px] leading-[32px] font-[600] uppercase"
+          >
+            Works
+          </a>
+          <a
+            onClick={() => setIsOpen(!isOpen)}
+            href={`#resume`}
+            className="text-[20px] leading-[32px] font-[600] uppercase"
+          >
+            RESUME
+          </a>
         </div>
-      }
+      </div>
     </div>
   );
 };

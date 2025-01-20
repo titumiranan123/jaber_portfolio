@@ -1,5 +1,6 @@
 import React from "react";
 import arrow from "./../assets/arrow.png";
+import { Link } from "react-router-dom";
 const Footer: React.FC = () => {
   return (
     <div className="max-w-[1240px] md:mt-[131px] mx-auto mt-[60px]">
@@ -12,15 +13,19 @@ const Footer: React.FC = () => {
         </p>
 
         <div className="md:mt-16 mt-10 flex justify-center items-center">
-          <button className="py-4 px-4 bg-[#030606] text-white rounded-full lg:h-[68px] h-[58px] lg:w-[180px] w-[250px] flex items-center poppins gap-2 lg:text-[20px] font-[600] justify-center">
+          <Link
+            to={"https://calendly.com/jaber-uiux/1-1-meeting"}
+            target="_blank"
+            className="py-4 px-4 bg-[#030606] text-white rounded-full lg:h-[68px] h-[58px] lg:w-[200px] w-[180px] flex items-center poppins gap-2 lg:text-[20px] font-[600] justify-center"
+          >
             {" "}
-            Contact
+            Book a Call
             <img
               className="w-[36px] h-[36px]"
               src={arrow}
               alt="case study"
             />{" "}
-          </button>
+          </Link>
         </div>
         <p className="flex justify-center items-center text-black lg:mt-[130px] mt-[80px] mb-[40px]">
           &copy; Jaber Hossain 2024 . All rights reserved.

@@ -9,6 +9,7 @@ import "swiper/css/mousewheel";
 import client1 from "./../assets/client1.png";
 import client2 from "./../assets/client2.png";
 import client3 from "./../assets/client3.png";
+import client4 from "./../assets/client4.png";
 import Heading from "./Heading";
 
 interface Slide {
@@ -44,6 +45,13 @@ const Testimonial: React.FC = () => {
         "Jaber Hossain brought our vision for Zuprex to life with his outstanding UI/UX design skills. He designed a modern and intuitive interface that not only looks amazing but also delivers a seamless shopping experience for our customers. His dedication, creativity, and attention to detail made all the difference. We highly recommend Jaber for any design project!",
       image: client3,
     },
+    {
+      designation: "CEO and Founder of Edit Simplified",
+      name: "MD Yeasin Bhuyan",
+      content:
+        "Jaber's audit of our website's UX was nothing short of transformative. He quickly identified pain points we had overlooked and provided actionable insights that significantly enhanced our user experience. His keen eye for detail and deep understanding of user behavior helped us make critical improvements, leading to increased engagement and a more seamless journey for our visitors.",
+      image: client4,
+    },
   ];
 
   const handleTextNavigationClick = (index: number) => {
@@ -58,9 +66,14 @@ const Testimonial: React.FC = () => {
       className="bg-[#0E151A] lg:pt-[75px] pb-[80px] w-full rounded-b-[36px]"
     >
       <div className=" max-w-[1240px] mx-auto  ">
-        <Heading title="TESTIMONIAL" />
+        <div>
+          <Heading title="TESTIMONIAL" />
+          <p className="md:text-[20px] poppins  md:leading-[30px] text-[16px] leading-[20px] font-[400] text-white text-center">
+            What my clients say about my work.
+          </p>
+        </div>
 
-        <div className="flex flex-col lg:flex-row  items-center gap-10  mt-[40px] lg:px-0 px-4">
+        <div className="flex flex-col lg:flex-row  items-center gap-10  mt-[60px] lg:px-0 px-4">
           {/* Left-side Text Navigation */}
           <div className="w-full lg:w-[500px] space-y-4">
             {slides.map((slide, index) => (

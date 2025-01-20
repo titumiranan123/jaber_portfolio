@@ -1,6 +1,7 @@
 import React from "react";
 import user from "./../assets/user.png";
 import arrow from "./../assets/arrow.png";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
@@ -26,7 +27,11 @@ const Header: React.FC = () => {
             for SaaS, ERP, POS, Website & Landing Page
           </span>
         </h1>
-        <button className=" lg:mt-[72px] mt-10 py-4 px-7 bg-[#030606] text-white rounded-full lg:h-[68px] h-[58px] lg:w-[208px] w-[200px] flex items-center poppins lg:gap-2 gap-1 lg:text-[18px] text-[16px] font-[600] lg:justify-center justify-between">
+        <Link
+          to={"https://calendly.com/jaber-uiux/1-1-meeting"}
+          target="_blank"
+          className=" lg:mt-[72px] mt-10 py-4 px-7 bg-[#030606] text-white rounded-full lg:h-[68px] h-[58px] lg:w-[208px] w-[200px] flex items-center poppins lg:gap-2 gap-1 lg:text-[18px] text-[16px] font-[600] lg:justify-center justify-between"
+        >
           {" "}
           Book A Call
           <img
@@ -34,7 +39,7 @@ const Header: React.FC = () => {
             src={arrow}
             alt="case study"
           />{" "}
-        </button>
+        </Link>
       </div>
     </div>
   );
