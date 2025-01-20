@@ -9,6 +9,10 @@ import work3 from "./../assets/work3.png";
 import work4 from "./../assets/work4.png";
 import work5 from "./../assets/work5.png";
 import work6 from "./../assets/work6.png";
+import work7 from "./../assets/work7.png";
+import work8 from "./../assets/work8.png";
+import work9 from "./../assets/work9.png";
+import work10 from "./../assets/work10.png";
 import Workcard from "./Workcard";
 interface Works {
   title: string;
@@ -20,45 +24,73 @@ const Works: React.FC = () => {
   const works: Works[] = [
     {
       title: "Video Editor Portfolio Website",
-      link: "https://montagemotion.com",
+      link: "https://samiularafat.com",
       content:
         "This the portfolio website for top rated video editor Samiul. In this website I made a smooth user flow for his target client to know about Samiul and his service and easily contact him or book a call",
       image: work2,
     },
     {
-      title: "Video Editor Portfolio Website",
-      link: "https://montagemotion.com",
+      title: "Web Developer Portfolio Website",
+      link: "https://titumiranan.online",
       content:
-        "This the portfolio website for top rated video editor Samiul. In this website I made a smooth user flow for his target client to know about Samiul and his service and easily contact him or book a call",
+        "Here the portfolio website design for Titumir Anan a passionate web developer. His portfolio showcases his works and experiences. This website is customized to grab the attention of the recruiters.",
       image: work1,
     },
     {
-      title: "Video Editor Portfolio Website",
+      title: "Digital Agency Website",
       link: "https://montagemotion.com",
       content:
-        "This the portfolio website for top rated video editor Samiul. In this website I made a smooth user flow for his target client to know about Samiul and his service and easily contact him or book a call",
+        "Montage motion is the reliable digital solutions provider mainly on Video Editing. Additionally, they provide Audio Edition, 2D/3D Animation , Graphic design , Digital Marketing, UI/UX Design , Web Development and special service on Podcast.",
       image: work3,
     },
     {
-      title: "Video Editor Portfolio Website",
-      link: "https://montagemotion.com",
+      title: "Short -form video editing service landing page",
+      link: "https://shorts.montagemotion.com",
       content:
-        "This the portfolio website for top rated video editor Samiul. In this website I made a smooth user flow for his target client to know about Samiul and his service and easily contact him or book a call",
+        "Montage Motion aims to show personalized service on short form video editing. This landing page keep the target users focused on one service. ",
       image: work4,
     },
     {
-      title: "Video Editor Portfolio Website",
-      link: "http://itechpark.co/",
+      title: "Talking head video editing service landing page",
+      link: "https://talkinghead.montagemotion.com",
       content:
-        "This the portfolio website for top rated video editor Samiul. In this website I made a smooth user flow for his target client to know about Samiul and his service and easily contact him or book a call",
+        "Montage Motion aims to show personalized service on talking head video editing. This landing page keep the target users focused on one service.",
       image: work5,
     },
     {
-      title: "Video Editor Portfolio Website",
-      link: "https://montagemotion.com",
+      title: "Digital Agency Website",
+      link: "http://itechpark.co/",
       content:
-        "This the portfolio website for top rated video editor Samiul. In this website I made a smooth user flow for his target client to know about Samiul and his service and easily contact him or book a call",
+        "I-Tech Park BD serves as your Digital Marketing Partner in all ways possible. From Social Media Marketing, WordPress Customization to ranking your website in search engines(SEO), they assist you in your digital presence.",
       image: work6,
+    },
+    {
+      title: "Web developer Portfolio Website",
+      link: "",
+      content:
+        "Here is the portfolio website design for Saad Srabon a passionate web developer. His portfolio showcases his works and experiences. This website is customized to grab the attention of the recruiters.",
+      image: work7,
+    },
+    {
+      title: "Ecommerce Website",
+      link: "",
+      content:
+        "Zuprex is an ecommerce business who sells sneakers. This is a trendy looking website to grab the attention of the young generation and get more sales",
+      image: work8,
+    },
+    {
+      title: "Ecommerce Website",
+      link: "",
+      content:
+        "Abru Germany is a german based ecommerce website. They sell Indian sub-continential and traditional dresses.",
+      image: work9,
+    },
+    {
+      title: "Ecommerce Website",
+      link: "",
+      content:
+        "SwiftShop is an ecommerce website. There target users belong to all age groups. In this platform multiple vendors can sell variour items.",
+      image: work10,
     },
   ];
   return (

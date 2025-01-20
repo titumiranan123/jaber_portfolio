@@ -24,6 +24,7 @@ const Workcard: React.FC<Props> = ({ work }) => {
         <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10 mt-5">
           <Link
             to={`${work.link}`}
+            target="_blank"
             className="py-4 px-7 border border-[#030606] text-[#030606] rounded-[12px] lg:h-[68px] h-[58px] w-full flex items-center justify-center gap-3 text-[16px] lg:text-[20px] font-semibold"
           >
             Visit Live Site
