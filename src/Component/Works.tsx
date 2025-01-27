@@ -29,13 +29,7 @@ const Works: React.FC = () => {
         "This the portfolio website for top rated video editor Samiul. In this website I made a smooth user flow for his target client to know about Samiul and his service and easily contact him or book a call",
       image: work2,
     },
-    {
-      title: "Web Developer Portfolio Website",
-      link: "https://titumiranan.online",
-      content:
-        "Here the portfolio website design for Titumir Anan a passionate web developer. His portfolio showcases his works and experiences. This website is customized to grab the attention of the recruiters.",
-      image: work1,
-    },
+
     {
       title: "Digital Agency Website",
       link: "https://montagemotion.com",
@@ -63,6 +57,13 @@ const Works: React.FC = () => {
       content:
         "I-Tech Park BD serves as your Digital Marketing Partner in all ways possible. From Social Media Marketing, WordPress Customization to ranking your website in search engines(SEO), they assist you in your digital presence.",
       image: work6,
+    },
+    {
+      title: "Web Developer Portfolio Website",
+      link: "https://titumiranan.online",
+      content:
+        "Here the portfolio website design for Titumir Anan a passionate web developer. His portfolio showcases his works and experiences. This website is customized to grab the attention of the recruiters.",
+      image: work1,
     },
     {
       title: "Web developer Portfolio Website",

@@ -75,18 +75,16 @@ const Testimonial: React.FC = () => {
 
         <div className="flex flex-col lg:flex-row  items-center gap-10  mt-[60px] lg:px-0 px-4">
           {/* Left-side Text Navigation */}
-          <div className="w-full lg:w-[500px] space-y-4">
+          <div className="w-full lg:w-[500px] space-y-1">
             {slides.map((slide, index) => (
               <div key={index}>
                 <motion.button
                   onClick={() => handleTextNavigationClick(index)}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`px-[14px] py-[19px] lg:w-[440px] h-[117px] ${
+                  className={`px-[14px] py-[19px] lg:w-[440px] h-[117px] hover:bg-[#121B22] transition-all duration-150 ease-in-out ${
                     index === activeIndex ? "bg-[#121B22] rounded-lg" : ""
                   }`}
                 >
-                  <div className="flex gap-2  items-center">
+                  <div className="flex gap-3  items-center">
                     <img className="w-10 h-10" src={slide.image} alt="" />
                     <div>
                       <p
@@ -118,7 +116,7 @@ const Testimonial: React.FC = () => {
                     transition={{ duration: 0.3 }}
                     className="bg-[#121B22] p-4 rounded-xl lg:hidden"
                   >
-                    <p className="text-white text-[14px] lg:text-[16px]">
+                    <p className="text-white font-[400] poppins lg:text-[20px] lg:leading-[30px] text-[18px] leading-[24.5px]">
                       {slide.content.split("<br/>").map((p, i) => (
                         <span key={i}>{p}</span>
                       ))}
@@ -130,7 +128,7 @@ const Testimonial: React.FC = () => {
           </div>
 
           {/* Main Slider */}
-          <div className="w-full lg:block hidden lg:w-[780px] rounded-xl overflow-hidden">
+          <div className="w-full lg:block hidden lg:w-[780px] rounded-xl  overflow-hidden">
             <Swiper
               direction="vertical"
               spaceBetween={30}
@@ -148,9 +146,9 @@ const Testimonial: React.FC = () => {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -50 }}
                     transition={{ duration: 0.5 }}
-                    className="flex flex-col lg:flex-row gap-5 lg:p-8 rounded-lg shadow-lg"
+                    className="flex flex-col lg:flex-row gap-5 lg:p-8 rounded-lg "
                   >
-                    <div className="text-white text-[14px] lg:text-[16px] font-normal flex flex-col gap-3">
+                    <div className=" text-white  font-[400] poppins lg:text-[20px] lg:leading-[30px] text-[18px] leading-[24.5px]">
                       {slide.content.split("<br/>").map((p, i) => (
                         <p key={i}>{p}</p>
                       ))}
