@@ -5,7 +5,7 @@ const About: React.FC = () => {
   return (
     <div
       id="about"
-      className="  pt-[83px]   rounded-t-[36px] bg-[#0E151A] w-full lg:px-0 px-4 z-20"
+      className="pt-[83px] pb-5  rounded-t-[36px] bg-[#0E151A] w-full lg:px-0 px-4 z-20"
     >
       <div className="max-w-[1240px] mx-auto ">
         <Heading title={"About"} />

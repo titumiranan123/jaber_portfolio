@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "./../assets/arrow.png";
+import arrow from "./../assets/arrow.svg";
 import { Link } from "react-router-dom";
 const Footer: React.FC = () => {
   return (

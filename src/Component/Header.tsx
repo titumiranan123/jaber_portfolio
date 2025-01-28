@@ -1,6 +1,6 @@
 import React from "react";
 import user from "./../assets/user.png";
-import arrow from "./../assets/arrow.png";
+import arrow from "./../assets/arrow.svg";
 import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "./../assets/logo.png";
+import logo from "./../assets/logo.svg";
 import whatsapp from "./../assets/what.png";
 import { Link } from "react-router-dom";
 const Navbar: React.FC = () => {
@@ -13,10 +13,12 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="flex max-w-[1240px] mx-auto justify-between items-center py-6 lg:px-0 px-4 overflow-hidden">
-      <div>
-        <img src={logo} alt="logo" />
-      </div>
-      <div className="bg-[#FCFBFC] rounded-full w-[478px] h-[58px]  lg:flex hidden justify-center items-center gap-3">
+      <img
+        className="lg:w-[95px] lg:h-[45px] md:max-w-[100%] md:h-auto w-[70px] h-auto"
+        src={logo}
+        alt="logo"
+      />
+      <div className="bg-[#FCFBFC] rounded-full w-[318px] h-[58px]  lg:flex hidden justify-center items-center gap-5">
         <a
           href="#about"
           className="text-[20px] leading-[32px] font-[700] uppercase"
@@ -33,7 +35,7 @@ const Navbar: React.FC = () => {
           className="uppercase text-[20px] leading-[32px] font-[400]"
           href="#resume"
         >
-          Resume
+          Testimonial
         </a>
       </div>
       <Link
@@ -122,7 +124,7 @@ const Navbar: React.FC = () => {
             href={`#resume`}
             className="text-[20px] leading-[32px] font-[600] uppercase"
           >
-            RESUME
+            Testimonial
           </a>
         </div>
       </div>

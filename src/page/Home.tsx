@@ -8,9 +8,9 @@ import Footer from "../Component/Footer";
 
 const Home: React.FC = () => {
   return (
-    <div>
-      <div className="overflow-hidden">
-        <Header />
+    <div className="overflow-hidden">
+      <Header />
+      <div className="bg-[#0E151A] rounded-t-[36px] rounded-b-[36px]">
         <section id="about">
           <About />
         </section>
@@ -20,8 +20,8 @@ const Home: React.FC = () => {
         <section id="resume">
           <Testimonial />
         </section>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };

@@ -25,15 +25,15 @@ const Testimonial: React.FC = () => {
 
   const slides: Slide[] = [
     {
-      designation: "Samiul Arafat Imon",
-      name: "Founder & CEO, Montage Motion",
+      designation: "Founder & CEO, Montage Motion",
+      name: "Samiul Arafat Imon",
       content:
         "Working with Jaber Hossain was an absolute pleasure! His expertise as a UI/UX designer is unmatched. Jaber designed both my personal and agency websites, as well as landing pages for my business, and the results were phenomenal. He has an incredible eye for detail and a deep understanding of user experience, ensuring every design was not only visually stunning but also functional and user-friendly. <br/> I highly recommend Jaber for anyone looking to enhance their digital presence!",
       image: client1,
     },
     {
-      designation: "Abul Hasnat",
-      name: "Front-end Engineer , Dashur Al, LLC",
+      designation: "Front-end Engineer , Dashur Al, LLC",
+      name: "Abul Hasnat",
       content:
         "Jaber's work in designing my Figma page was nothing short of exceptional. His creativity and visual appeal truly exceeded expectations, and he was incredibly polite and proactive throughout the process. I love his fluent communication and stellar delivery. He is setting up the bar so high!!!",
       image: client2,
